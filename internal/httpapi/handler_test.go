@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/example/vision-products-api/internal/database"
-	"github.com/example/vision-products-api/internal/httpapi"
-	"github.com/example/vision-products-api/internal/product"
+	"github.com/WissemHajbi/vision-backend/internal/database"
+	"github.com/WissemHajbi/vision-backend/internal/httpapi"
+	"github.com/WissemHajbi/vision-backend/internal/product"
 )
 
 func TestCreateThenGetProduct(t *testing.T) {

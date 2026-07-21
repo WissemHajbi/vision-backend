@@ -1,4 +1,4 @@
-module github.com/example/vision-products-api
+module github.com/WissemHajbi/vision-backend
 
 go 1.26.4
 

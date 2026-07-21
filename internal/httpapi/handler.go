@@ -9,7 +9,7 @@ import (
 	"math"
 	"net/http"
 
-	"github.com/example/vision-products-api/internal/product"
+	"github.com/WissemHajbi/vision-backend/internal/product"
 )
 
 type Handler struct {
