@@ -1,0 +1,10 @@
+# Runtime data
+/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Environment and binaries
+.env
+/bin/
+vision-products-api

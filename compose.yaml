@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    restart: unless-stopped
+    # Only Nginx on this VPS should reach the API directly.
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      HTTP_ADDRESS: ":8080"
+      DATABASE_PATH: "/data/products.db"
+    volumes:
+      - product_data:/data
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  product_data:
